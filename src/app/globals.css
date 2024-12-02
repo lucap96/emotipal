@@ -1,0 +1,21 @@
+/* scroll bar */
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+@import 'simplebar-react/dist/simplebar.min.css';
+
+/* map */
+@import 'mapbox-gl/dist/mapbox-gl.css';
+
+/* apex-chart */
+@import '../../public/assets/third-party/apex-chart.css';
+
+/* react-table */
+@import '../../public/assets/third-party/react-table.css';
+
+.css-13ddxbb > * + * {
+  margin: 0 !important;
+}
+
+input[type='number']::-webkit-inner-spin-button {
+  margin-left: 5px;
+}
