@@ -30,8 +30,8 @@ def login(user: UserLogin):
     user_metadata = {
       "id": dict(result.user).get("id", ""),
       "email": result.user.user_metadata.get("email", ""),
-      "firstName": result.user.user_metadata.get("firstName", ""),
-      "lastName": result.user.user_metadata.get("lastName", ""),
+      "firstName": result.user.user_metadata.get("first_name", ""),
+      "lastName": result.user.user_metadata.get("last_name", ""),
       "role": dict(result.user).get("role", ""),
     }
     access_token = create_access_token(data={"sub": result.user.id}, expires_delta=timedelta(hours=10))

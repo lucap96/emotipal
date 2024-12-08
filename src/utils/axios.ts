@@ -1,7 +1,7 @@
 import axios, { AxiosRequestConfig } from 'axios';
 import { getSession } from 'next-auth/react';
 
-const axiosServices = axios.create({ baseURL: process.env.NEXT_APP_API_URL });
+const axiosServices = axios.create({ baseURL: 'http://127.0.0.1:8000' });
 
 // ==============================|| AXIOS - FOR MOCK SERVICES ||============================== //
 
